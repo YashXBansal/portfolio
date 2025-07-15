@@ -53,6 +53,10 @@ export type ValidSkills =
   | "TensorFlow"
   | "PyTorch"
   | "Spring Boot"
+  | "Razorpay"
+  | "LangChain"
+  | "Google Gemini"
+  | "Clerk"
   | "Laravel"
   | "PHP";
 
@@ -63,6 +67,8 @@ export type ValidCategory =
   | "UI/UX"
   | "Web Dev"
   | "Mobile Dev"
+  | "AI/ML"
+  | "SaaS"
   | "3D Modeling";
 
 export type ValidExpType = "Personal Project" | "Professional";
