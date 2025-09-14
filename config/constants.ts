@@ -58,6 +58,7 @@ export type ValidSkills =
   | "Google Gemini"
   | "Clerk"
   | "Laravel"
+  | "Socket.IO"
   | "PHP";
 
 export type ValidCategory =
@@ -69,6 +70,10 @@ export type ValidCategory =
   | "Mobile Dev"
   | "AI/ML"
   | "SaaS"
+  | "Distributed Systems"
+  | "Storage"
+  | "CLI"
+  | "Dashboard"
   | "3D Modeling";
 
 export type ValidExpType = "Personal Project" | "Professional";

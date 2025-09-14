@@ -75,12 +75,18 @@ export default function IndexPage() {
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
           <Image
             src={yashImg}
-            width={160} // equal width and height
-            height={160}
+            width={180}
+            height={180}
             sizes="100vw"
-            className="bg-primary rounded-full border-8 border-primary object-cover"
             alt="Yash Bansal - Full Stack Developer Portfolio"
             priority
+            className="
+              rounded-full object-cover 
+              border-4 border-transparent 
+              bg-gradient-to-tr from-brand-400 via-brand-600 to-brand-800 
+              p-[4px]
+              shadow-xl shadow-brand-800/40
+            "
           />
 
           <AnimatedText

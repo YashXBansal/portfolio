@@ -45,7 +45,7 @@ export const Experiences: ExperienceInterface[] = [
       "Redux",
       "Javascript",
     ],
-    startDate: new Date("2024-01-01"),
+    startDate: new Date("2024-02-01"),
     endDate: new Date("2024-03-01"),
     companyLogoImg: "/experience/blogorama/companyLogo.png",
     pagesInfoArr: [
@@ -94,8 +94,8 @@ export const Experiences: ExperienceInterface[] = [
     category: ["Web Dev", "AI/ML", "Full Stack", "SaaS"],
     shortDescription:
       "AI-powered SaaS to summarize uploaded PDFs using LLMs, featuring subscriptions, sharing, and markdown rendering.",
-    websiteLink: "https://ai-summary-azure.vercel.app/", // replace with real link
-    githubLink: "https://github.com/YashXBansal/ai-summary", // replace if needed
+    websiteLink: "https://ai-summary-azure.vercel.app/",
+    githubLink: "https://github.com/YashXBansal/ai-summary",
     techStack: [
       "Next.js",
       "React",
@@ -107,8 +107,8 @@ export const Experiences: ExperienceInterface[] = [
       "Google Gemini",
       "Clerk",
     ],
-    startDate: new Date("2024-06-01"),
-    endDate: new Date("2024-07-15"),
+    startDate: new Date("2025-07-12"),
+    endDate: new Date("2025-07-23"),
     companyLogoImg: "/experience/AI-SUMMARY/companyLogo.png",
     pagesInfoArr: [
       {
@@ -149,6 +149,80 @@ export const Experiences: ExperienceInterface[] = [
         "Raw SQL (Neon) used for optimized database access.",
         "Markdown rendering and summary sharing enabled.",
         "Clerk auth with 99.9% login success across 100+ test users.",
+      ],
+    },
+  },
+  {
+    id: "shardfs",
+    companyName: "ShardFS",
+    type: "Personal Project",
+    category: ["CLI", "Distributed Systems", "Backend", "Storage", "Dashboard"],
+    shortDescription:
+      "A CLI based distributed file system that shards and replicates files across nodes for fault tolerance, scalability, along with a live real time dashboard.",
+    websiteLink: "https://www.npmjs.com/package/shardfs-cli",
+    githubLink: "https://github.com/YashXBansal/shardfs",
+    techStack: [
+      "Node.js",
+      "Typescript",
+      "express.js",
+      "PostgreSQL",
+      "Docker",
+      "Redis",
+      "React",
+      "Socket.IO",
+    ],
+    startDate: new Date("2025-08-12"),
+    endDate: new Date("2025-07-01"),
+    companyLogoImg: "/experience/shardfs/companyLogo.png",
+    pagesInfoArr: [
+      {
+        title: "System Overview",
+        description:
+          "Architecture diagram showing how files are split into shards, replicated, and distributed across storage nodes with metadata service orchestration.",
+        imgArr: ["/experience/shardfs/overview.png"],
+      },
+      {
+        title: "Upload CLI",
+        description:
+          "Example of uploading a file via CLI. The system splits it into shards, replicates them, and updates metadata service.",
+        imgArr: ["/experience/shardfs/upload-cli.png"],
+      },
+      {
+        title: "Retrieval CLI",
+        description:
+          "CLI command fetching shards in parallel from distributed nodes, reconstructing the file seamlessly for the client.",
+        imgArr: ["/experience/shardfs/retrieval-cli.png"],
+      },
+      {
+        title: "Fault Tolerance Demo",
+        description:
+          "Terminal output showing successful file recovery when one node fails, leveraging shard replicas for high availability.",
+        imgArr: ["/experience/shardfs/fault-tolerant.png"],
+      },
+      {
+        title: "Realtime Dashboard",
+        description:
+          "A web dashboard showing live system metrics such as shard distribution, node health, active connections, throughput, and replication status.",
+        imgArr: [
+          "/experience/shardfs/dashboard1.png",
+          "/experience/shardfs/dashboard2.png",
+        ],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "ShardFS is a distributed file system inspired by GFS/HDFS, designed for scalable and fault-tolerant storage. Large files are split into shards, distributed across nodes, and replicated to guarantee durability and availability.",
+        "It features a central metadata service for shard indexing, node health tracking, and orchestration of uploads/retrievals. Redis was used as a caching layer for hot metadata, reducing lookup latency.",
+        "Alongside the CLI, a real-time monitoring dashboard was built to visualize cluster health, shard placement, and I/O statistics, enabling better observability.",
+        "By supporting parallel uploads and downloads, ShardFS achieves higher throughput for large datasets, while its replication strategy ensures resilience against node failures.",
+      ],
+      bullets: [
+        "Built a distributed file system with sharding + replication.",
+        "Designed automatic fault recovery for high availability.",
+        "Implemented metadata service for shard indexing and node coordination.",
+        "Developed realtime monitoring dashboard for system observability.",
+        "Dockerized cluster setup for reproducible testing and deployment.",
+        "Optimized performance with parallel shard fetches.",
       ],
     },
   },

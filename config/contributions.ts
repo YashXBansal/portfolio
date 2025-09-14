@@ -15,12 +15,17 @@ export const contributionsUnsorted: contributionsInterface[] = [
   },
   {
     repo: "RapportRave",
-    contibutionDescription:
-      "Contributed to the auth part of the app",
+    contibutionDescription: "Contributed to the auth part of the app",
     repoOwner: "PiyushXmishra",
     link: "https://github.com/PiyushXmishra/RapportRave",
   },
-
+  {
+    repo: "ShardFS",
+    contibutionDescription:
+      "Worked on distributed file storage with sharding and fault tolerance.",
+    repoOwner: "YashBansal",
+    link: "https://github.com/YashXBansal/ShardFS",
+  },
 ];
 
 export const featuredContributions: contributionsInterface[] =
